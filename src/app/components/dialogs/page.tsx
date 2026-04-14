@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import { Typography, Box, Divider, Button, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, GlassCard } from "@awaymess/ui";
+// import { Typography, Box, Divider, Button, Dialog, GlassCard } from "@awaymess/ui";
+// import { DialogTitle, DialogContent, DialogContentText, DialogActions } from "@mui/material";
 import CodeBlock from "@/components/CodeBlock";
 
 const codeExample = `import { Button, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions } from "@awaymess/ui";

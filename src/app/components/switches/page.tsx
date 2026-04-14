@@ -1,7 +1,8 @@
 "use client";
 
-import React from "react";
-import { Typography, Box, Divider, Stack, GlassCard, Switch, Checkbox, FormControlLabel, FormGroup } from "@awaymess/ui";
+// import { Typography, Box, Divider, GlassCard, Switch, Checkbox } from "@awaymess/ui";
+// import { FormControlLabel, FormGroup } from '@mui/material'
+import { Typography, Box, Divider, GlassCard, Switch, Checkbox, FormControlLabel, FormGroup } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
 const codeExample = `import { Switch, Checkbox, FormControlLabel, FormGroup } from "@awaymess/ui";

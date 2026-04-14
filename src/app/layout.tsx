@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import EmotionRegistry from "@/components/EmotionRegistry";
 import ThemeRegistry from "@/components/ThemeRegistry";
 import DocsLayout from "@/components/DocsLayout";
 
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeRegistry>
-          <DocsLayout>{children}</DocsLayout>
-        </ThemeRegistry>
+        <EmotionRegistry>
+          <ThemeRegistry>
+            <DocsLayout>{children}</DocsLayout>
+          </ThemeRegistry>
+        </EmotionRegistry>
       </body>
     </html>
   );

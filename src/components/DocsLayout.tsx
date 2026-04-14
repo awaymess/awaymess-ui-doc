@@ -99,7 +99,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
           @awaymess/ui
         </Typography>
         <Typography variant="caption" color="text.secondary">
-          v0.1.9
+          v0.1.10
         </Typography>
       </Box>
       <Divider />
