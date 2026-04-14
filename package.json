@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@awaymess/ui": "file:../nighttt-ui/awaymess-ui-0.1.10.tgz",
+    "@awaymess/ui": "^0.1.10",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^9.0.0",
