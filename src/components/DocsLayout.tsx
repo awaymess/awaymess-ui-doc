@@ -22,9 +22,11 @@ import LightModeIcon from '@mui/icons-material/LightMode'
 import { useThemeMode } from './ThemeRegistry'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { version } from '@awaymess/ui/package.json'
+import packageJson from '../../package.json'
 
 const drawerWidth = 260
+const version =
+  packageJson.dependencies?.['@awaymess/ui']?.replace(/^[~^]/, '') || '0.1.13'
 
 type MenuItemType = { label: string; path: string }
 type MenuCategory = { category: string; items: MenuItemType[] }
