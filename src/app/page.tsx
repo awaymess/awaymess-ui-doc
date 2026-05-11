@@ -27,7 +27,6 @@ export default function IntroductionPage() {
 
       <Typography variant="h5" gutterBottom>
         Basic Usage
-        พหะด่หก่าิด่หกเิด่า้เหด่าหก้ด่าหก้ด่า
       </Typography>
       <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
         To get started, wrap your application with the `LibThemeProvider`. This will automatically 
