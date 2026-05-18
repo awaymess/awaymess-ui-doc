@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
 import { Typography, Box, Divider, GlassCard, useTheme, useMediaQuery } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
@@ -20,11 +19,6 @@ export default function HooksExample() {
 export default function HooksPage() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('sm'));
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   return (
     <Box sx={{ maxWidth: 800 }}>
@@ -40,7 +34,7 @@ export default function HooksPage() {
       <GlassCard sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>useMediaQuery</Typography>
         <Typography variant="body1" sx={{ mb: 2 }}>
-          Current screen is {mounted ? (matches ? 'wider' : 'narrower') : '...'} than the SM breakpoint.
+          Current screen is {matches ? 'wider' : 'narrower'} than the SM breakpoint.
         </Typography>
         <Typography variant="caption" color="text.secondary">
           Try resizing your browser window.

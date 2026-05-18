@@ -25,8 +25,8 @@ import { usePathname } from 'next/navigation'
 import packageJson from '../../package.json'
 
 const drawerWidth = 260
-const version =
-  packageJson.dependencies?.['@awaymess/ui']?.replace(/^[~^]/, '') || '0.1.13'
+const uiDependency = packageJson.dependencies?.['@awaymess/ui']
+const version = uiDependency?.startsWith('file:') ? 'local' : uiDependency?.replace(/^[~^]/, '') || '0.1.13'
 
 type MenuItemType = { label: string; path: string }
 type MenuCategory = { category: string; items: MenuItemType[] }

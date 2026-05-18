@@ -9,6 +9,7 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+    "preserveSymlinks": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
@@ -19,7 +20,19 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@awaymess/ui": ["./src/local-awaymess-ui.ts"],
+      "react": ["./node_modules/@types/react/index.d.ts"],
+      "react-dom": ["./node_modules/@types/react-dom/index.d.ts"],
+      "react/jsx-runtime": ["./node_modules/@types/react/jsx-runtime.d.ts"],
+      "@emotion/react": ["./node_modules/@emotion/react"],
+      "@emotion/styled": ["./node_modules/@emotion/styled"],
+      "@mui/material": ["./node_modules/@mui/material"],
+      "@mui/material/*": ["./node_modules/@mui/material/*"],
+      "@mui/icons-material": ["./node_modules/@mui/icons-material"],
+      "@mui/icons-material/*": ["./node_modules/@mui/icons-material/*"],
+      "@mui/x-date-pickers": ["./node_modules/@mui/x-date-pickers"],
+      "@mui/x-date-pickers/*": ["./node_modules/@mui/x-date-pickers/*"]
     }
   },
   "include": [

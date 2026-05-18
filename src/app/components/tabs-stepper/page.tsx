@@ -68,7 +68,7 @@ export default function TabsStepperPage() {
         <Typography variant="h6" gutterBottom>Stepper</Typography>
         <Box sx={{ width: '100%' }}>
           <Stepper activeStep={activeStep}>
-            {steps.map((label, index) => {
+            {steps.map((label) => {
               const stepProps: { completed?: boolean } = {};
               const labelProps: {
                 optional?: React.ReactNode;
