@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@awaymess/ui": "^0.1.16",
+    "@awaymess/ui": "^0.1.17",
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
