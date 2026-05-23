@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Box, Divider, AppBar, Toolbar, IconButton, Button, GlassCard, Drawer, List, ListItem, ListItemButton, ListItemText } from "@awaymess/ui";
+import { Typography, Box, Divider, AppBar, Toolbar, IconButton, Button, Card, Drawer, List, ListItem, ListItemButton, ListItemText } from "@awaymess/ui";
 import MenuIcon from '@mui/icons-material/Menu';
 import CodeBlock from "@/components/CodeBlock";
 
@@ -48,7 +48,7 @@ export default function AppBarDrawerPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>AppBar Demo</Typography>
         <Box sx={{ flexGrow: 1, mb: 4 }}>
           <AppBar position="static" sx={{ background: 'transparent' }}>
@@ -85,7 +85,7 @@ export default function AppBarDrawerPage() {
             onKeyDown={toggleDrawer(false)}
           >
             <List>
-              {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+              {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text) => (
                 <ListItem key={text} disablePadding>
                   <ListItemButton>
                     <ListItemText primary={text} />
@@ -95,7 +95,7 @@ export default function AppBarDrawerPage() {
             </List>
             <Divider />
             <List>
-              {['All mail', 'Trash', 'Spam'].map((text, index) => (
+              {['All mail', 'Trash', 'Spam'].map((text) => (
                 <ListItem key={text} disablePadding>
                   <ListItemButton>
                     <ListItemText primary={text} />
@@ -105,7 +105,7 @@ export default function AppBarDrawerPage() {
             </List>
           </Box>
         </Drawer>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

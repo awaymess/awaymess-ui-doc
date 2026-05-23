@@ -36,7 +36,7 @@ const MENU: (MenuItemType | MenuCategory)[] = [
   {
     category: 'Custom Components',
     items: [
-      { label: 'GlassCard', path: '/components/glass-card' },
+      { label: 'Card', path: '/components/card' },
       { label: 'UserCard', path: '/components/user-card' },
     ],
   },
@@ -69,7 +69,6 @@ const MENU: (MenuItemType | MenuCategory)[] = [
   {
     category: 'Surfaces & Navigation',
     items: [
-      { label: 'Paper & Card', path: '/components/surfaces' },
       { label: 'AppBar & Drawer', path: '/components/appbar-drawer' },
       { label: 'Tabs & Stepper', path: '/components/tabs-stepper' },
     ],
@@ -100,7 +99,15 @@ export default function DocsLayout({
   }
 
   const drawer = (
-    <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+    <Box
+      sx={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        bgcolor: 'background.paper',
+        color: 'text.primary',
+      }}
+    >
       <Box sx={{ p: 2 }}>
         <Typography variant='h6' color='primary' sx={{ fontWeight: 'bold' }}>
           @awaymess/ui
@@ -194,7 +201,17 @@ export default function DocsLayout({
   )
 
   return (
-    <Box sx={{ display: 'flex', minHeight: '100vh' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        minHeight: '100vh',
+        bgcolor: 'background.default',
+        color: 'text.primary',
+        transition: theme.transitions.create(['background-color', 'color'], {
+          duration: theme.transitions.duration.shorter,
+        }),
+      }}
+    >
       {/* Header */}
       <AppBar
         position='fixed'
@@ -237,6 +254,8 @@ export default function DocsLayout({
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
+              bgcolor: 'background.paper',
+              color: 'text.primary',
             },
           }}
         >
@@ -249,6 +268,8 @@ export default function DocsLayout({
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
+              bgcolor: 'background.paper',
+              color: 'text.primary',
             },
           }}
           open
@@ -264,7 +285,10 @@ export default function DocsLayout({
           flexGrow: 1,
           p: { xs: 3, md: 6 },
           width: { md: `calc(100% - ${drawerWidth}px)` },
+          minHeight: 'calc(100vh - 64px)',
           mt: 8, // Offset for the fixed App Bar
+          bgcolor: 'background.default',
+          color: 'text.primary',
         }}
       >
         {children}

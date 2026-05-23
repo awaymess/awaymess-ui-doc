@@ -1,8 +1,7 @@
 "use client";
 
-// import { Typography, Box, Divider, GlassCard, Switch, Checkbox } from "@awaymess/ui";
 // import { FormControlLabel, FormGroup } from '@mui/material'
-import { Typography, Box, Divider, GlassCard, Switch, Checkbox, FormControlLabel, FormGroup } from "@awaymess/ui";
+import { Typography, Box, Divider, Card, Switch, Checkbox, FormControlLabel, FormGroup } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
 const codeExample = `import { Switch, Checkbox, FormControlLabel, FormGroup } from "@awaymess/ui";
@@ -29,7 +28,7 @@ export default function SwitchesPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>Switches</Typography>
         <FormGroup sx={{ mb: 4 }}>
           <FormControlLabel control={<Switch defaultChecked />} label="Label" />
@@ -45,7 +44,7 @@ export default function SwitchesPage() {
           <FormControlLabel control={<Checkbox defaultChecked color="success" />} label="Success Color" />
           <FormControlLabel control={<Checkbox defaultChecked color="error" />} label="Error Color" />
         </FormGroup>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

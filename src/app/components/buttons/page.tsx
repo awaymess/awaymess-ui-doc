@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Box, Divider, Button, Stack, GlassCard, IconButton } from "@awaymess/ui";
+import { Typography, Box, Divider, Button, Stack, Card, IconButton } from "@awaymess/ui";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import CodeBlock from "@/components/CodeBlock";
 
@@ -33,7 +33,7 @@ export default function ButtonsPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>Variants</Typography>
         <Stack direction="row" spacing={3} sx={{ mb: 4 }}>
           <Button variant="contained">Contained</Button>
@@ -71,7 +71,7 @@ export default function ButtonsPage() {
             <FavoriteIcon />
           </IconButton>
         </Stack>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

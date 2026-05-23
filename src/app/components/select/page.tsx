@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Typography, Box, Divider, Stack, GlassCard, Select, MenuItem, InputLabel, FormControl, Autocomplete, TextField } from "@awaymess/ui";
-// import { Typography, Box, Divider, Stack, GlassCard, Select, MenuItem, Autocomplete, TextField } from "@awaymess/ui";
+import { Typography, Box, Divider, Stack, Card, Select, MenuItem, InputLabel, FormControl, Autocomplete, TextField } from "@awaymess/ui";
 // import { InputLabel, FormControl} from "@mui/material";
 import { SelectChangeEvent } from "@mui/material";
 import CodeBlock from "@/components/CodeBlock";
@@ -60,7 +59,7 @@ export default function SelectPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>Basic Select</Typography>
         <Stack spacing={3} sx={{ mb: 6 }}>
           <FormControl fullWidth>
@@ -89,7 +88,7 @@ export default function SelectPage() {
             renderInput={(params) => <TextField {...params} label="Movie" />}
           />
         </Stack>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

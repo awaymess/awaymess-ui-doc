@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-// import { Typography, Box, Divider, Card,  Button, Paper, Stack } from "@awaymess/ui";
-// import { CardContent, CardActions } from '@mui/material'
 import { Typography, Box, Divider, Card, CardContent, CardActions, Button, Paper, Stack } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
@@ -28,7 +26,7 @@ export default function CardExample() {
 export default function SurfacesPage() {
   return (
     <Box sx={{ maxWidth: 800 }}>
-      <Typography variant="h3" gutterBottom>Paper & Card</Typography>
+      <Typography variant="h3" gutterBottom>Card</Typography>
       <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
         In Material Design, the physical properties of paper are translated to the screen. 
         Cards are surfaces that display content and actions on a single topic.

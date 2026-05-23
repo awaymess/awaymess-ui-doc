@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Box, Divider, Stack, Chip, Tooltip, GlassCard, IconButton } from "@awaymess/ui";
+import { Typography, Box, Divider, Stack, Chip, Tooltip, Card, IconButton } from "@awaymess/ui";
 import DeleteIcon from '@mui/icons-material/Delete';
 import CodeBlock from "@/components/CodeBlock";
 
@@ -39,7 +39,7 @@ export default function ChipTooltipPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>Chips</Typography>
         <Stack direction="row" spacing={1} sx={{ mb: 4 }}>
           <Chip label="Clickable" onClick={() => {}} />
@@ -66,7 +66,7 @@ export default function ChipTooltipPage() {
             <Typography sx={{ cursor: 'pointer', textDecoration: 'underline' }}>Hover me</Typography>
           </Tooltip>
         </Stack>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

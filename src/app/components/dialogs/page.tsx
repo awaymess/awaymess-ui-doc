@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Typography, Box, Divider, Button, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, GlassCard } from "@awaymess/ui";
-// import { Typography, Box, Divider, Button, Dialog, GlassCard } from "@awaymess/ui";
+import { Typography, Box, Divider, Button, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Card } from "@awaymess/ui";
 // import { DialogTitle, DialogContent, DialogContentText, DialogActions } from "@mui/material";
 import CodeBlock from "@/components/CodeBlock";
 
@@ -58,7 +57,7 @@ export default function DialogsPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>Basic Dialog</Typography>
         <Button variant="outlined" onClick={handleClickOpen}>
           Open alert dialog
@@ -85,7 +84,7 @@ export default function DialogsPage() {
             </Button>
           </DialogActions>
         </Dialog>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

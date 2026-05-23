@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Typography, Box, Divider, Tabs, Tab, Stepper, Step, StepLabel, Button, GlassCard } from "@awaymess/ui";
+import { Typography, Box, Divider, Tabs, Tab, Stepper, Step, StepLabel, Button, Card } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
 const codeExample = `import { Tabs, Tab, Box } from "@awaymess/ui";
@@ -50,7 +50,7 @@ export default function TabsStepperPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>Tabs</Typography>
         <Box sx={{ width: '100%', mb: 6 }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -68,7 +68,7 @@ export default function TabsStepperPage() {
         <Typography variant="h6" gutterBottom>Stepper</Typography>
         <Box sx={{ width: '100%' }}>
           <Stepper activeStep={activeStep}>
-            {steps.map((label, index) => {
+            {steps.map((label) => {
               const stepProps: { completed?: boolean } = {};
               const labelProps: {
                 optional?: React.ReactNode;
@@ -97,7 +97,7 @@ export default function TabsStepperPage() {
             </Box>
           </React.Fragment>
         </Box>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

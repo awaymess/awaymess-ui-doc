@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Box, Divider, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, GlassCard } from "@awaymess/ui";
+import { Typography, Box, Divider, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Card, Paper } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
 const codeExample = `import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@awaymess/ui";
@@ -64,7 +64,7 @@ export default function TablesPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <TableContainer component={Paper} elevation={0} sx={{ background: 'transparent' }}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
@@ -94,7 +94,7 @@ export default function TablesPage() {
             </TableBody>
           </Table>
         </TableContainer>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

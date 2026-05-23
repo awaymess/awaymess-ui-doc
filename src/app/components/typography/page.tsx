@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Box, Divider, Stack, GlassCard } from "@awaymess/ui";
+import { Typography, Box, Divider, Stack, Card } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
 const codeExample = `import { Typography, Stack } from "@awaymess/ui";
@@ -32,7 +32,7 @@ export default function TypographyPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Stack spacing={2}>
           <Typography variant="h1" gutterBottom>h1. Heading</Typography>
           <Typography variant="h2" gutterBottom>h2. Heading</Typography>
@@ -51,7 +51,7 @@ export default function TypographyPage() {
           <Typography variant="caption" sx={{ display: 'block' }} gutterBottom>caption text</Typography>
           <Typography variant="overline" sx={{ display: 'block' }} gutterBottom>overline text</Typography>
         </Stack>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

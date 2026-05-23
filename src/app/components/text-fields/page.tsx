@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Box, Divider, TextField, Stack, GlassCard } from "@awaymess/ui";
+import { Typography, Box, Divider, TextField, Stack, Card } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
 const codeExample = `import { TextField, Stack } from "@awaymess/ui";
@@ -30,7 +30,7 @@ export default function TextFieldsPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>Basic Inputs</Typography>
         <Stack spacing={3} sx={{ mb: 4 }}>
           <TextField label="Outlined (Default)" variant="outlined" />
@@ -55,7 +55,7 @@ export default function TextFieldsPage() {
             defaultValue="Type something long here..."
           />
         </Stack>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

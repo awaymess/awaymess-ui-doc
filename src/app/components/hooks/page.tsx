@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { Typography, Box, Divider, GlassCard, useTheme, useMediaQuery } from "@awaymess/ui";
+import React from "react";
+import { Typography, Box, Divider, Card, useTheme, useMediaQuery } from "@awaymess/ui";
 import CodeBlock from "@/components/CodeBlock";
 
 const codeExample = `import { useTheme, useMediaQuery, Box } from "@awaymess/ui";
@@ -19,12 +19,7 @@ export default function HooksExample() {
 
 export default function HooksPage() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('sm'));
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const matches = useMediaQuery(theme.breakpoints.up('sm'), { noSsr: true });
 
   return (
     <Box sx={{ maxWidth: 800 }}>
@@ -37,10 +32,10 @@ export default function HooksPage() {
 
       <Typography variant="h5" gutterBottom>Example</Typography>
 
-      <GlassCard sx={{ p: 4, mb: 4 }}>
+      <Card sx={{ p: 4, mb: 4 }}>
         <Typography variant="h6" gutterBottom>useMediaQuery</Typography>
         <Typography variant="body1" sx={{ mb: 2 }}>
-          Current screen is {mounted ? (matches ? 'wider' : 'narrower') : '...'} than the SM breakpoint.
+          Current screen is {matches ? 'wider' : 'narrower'} than the SM breakpoint.
         </Typography>
         <Typography variant="caption" color="text.secondary">
           Try resizing your browser window.
@@ -52,7 +47,7 @@ export default function HooksPage() {
         <Box sx={{ p: 2, bgcolor: theme.palette.primary.main, color: theme.palette.primary.contrastText, borderRadius: 2, textAlign: 'center' }}>
           This box uses the primary main color from the theme.
         </Box>
-      </GlassCard>
+      </Card>
 
       <Divider sx={{ my: 4 }} />
 

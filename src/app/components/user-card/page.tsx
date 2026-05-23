@@ -21,7 +21,7 @@ export default function UserCardPage() {
     <Box sx={{ maxWidth: 800 }}>
       <Typography variant="h3" gutterBottom>UserCard</Typography>
       <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-        A profile card component built on top of the GlassCard. Perfect for displaying 
+        A profile card component for displaying
         user information in a modern, elegant way.
       </Typography>
 
