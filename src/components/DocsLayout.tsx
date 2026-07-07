@@ -47,6 +47,7 @@ const MENU: (MenuItemType | MenuCategory)[] = [
       { label: 'Text Fields', path: '/components/text-fields' },
       { label: 'Select & Autocomplete', path: '/components/select' },
       { label: 'Checkbox & Switch', path: '/components/switches' },
+      { label: 'Date & Time Pickers', path: '/components/date-pickers' },
       { label: 'Forms', path: '/components/form' },
     ],
   },
